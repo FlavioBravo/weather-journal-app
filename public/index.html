@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/f21e5638ba.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Weather-Journal-App</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="navbar-container">
+        <nav class="bg-nav nunito">
+          <h1>Weather App</h1>
+        </nav>
+      </header>
+      <div class="main-container bg-main" id="main-container">
+        <div class="bg-container">
+          <div class="bg-form">
+            <form class="holder-form nunito" method="post">
+              <div class="holder-input">
+                <label class="lbl-input text-medium" for="zip"
+                  >US zip code:
+                </label>
+                <input
+                  type="text"
+                  id="zip"
+                  class="text-input"
+                  placeholder="Enter zip code"
+                />
+              </div>
+              <div class="holder-input">
+                <label class="lbl-input text-medium" for="feelings"
+                  >How are you feeling today?</label
+                >
+                <textarea
+                  class="text-input"
+                  id="feelings"
+                  placeholder="Enter your feelings here"
+                  rows="5"
+                  cols="50"
+                ></textarea>
+              </div>
+              <div class="bg-btn">
+                <button class="btn-primary" id="generate" type="submit">
+                  <b>Generate</b>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="bg-content nunito" id="entryHolder">
+            <div class="table" id="date"><h3 class="title">Date</h3></div>
+            <div class="table" id="temp">
+              <h3 class="title">Temp</h3>
+            </div>
+            <div class="table" id="content"><h3 class="title">Content</h3></div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-container bg-footer nunito">
+        <p class="text-base">
+          <i>Copyright 2020 - Third Project Of My Nanodegree - Udacity</i>
+        </p>
+      </footer>
+    </main>
+    <script defer src="./js/app.js"></script>
+  </body>
+</html>

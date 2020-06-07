@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "1",
+    "temperature": 293.43,
+    "date": "7/6/2020",
+    "userResponse": "zip code: 94040 - feelings: estoy feliz !!"
+  },
+  {
+    "_id": "2",
+    "temperature": 293.36,
+    "date": "7/6/2020",
+    "userResponse": "zip code: 94040 - feelings: Estoy emocionado"
+  }
+]
