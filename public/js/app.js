@@ -80,6 +80,11 @@ const generateBtn = document.getElementById("generate");
 const generateMethod = (evt) => {
   const zipInput = getElementValueById("zip");
   const feelingsInput = getElementValueById("feelings");
+  if (zipInput === "" || feelingsInput === "") {
+    alert("all fields should be completed");
+    evt.preventDefault();
+    return;
+  }
   getOpenWeatherMap(zipInput).then((res) => {
     if (res.main) {
       const dataObject = {
